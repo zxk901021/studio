@@ -15,10 +15,11 @@
 
 
     <com.facebook.drawee.view.SimpleDraweeView
-        android:id="@+id/my_drawee_view"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:id="@+id/my_draw_view"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:layout_below="@+id/list_btn"
         android:layout_margin="15dp"
-        fresco:placeholderImage="@drawable/person_tab2"/>
+        fresco:placeholderImage="@drawable/person_tab2"
+        android:layout_centerHorizontal="true"/>
 </RelativeLayout>

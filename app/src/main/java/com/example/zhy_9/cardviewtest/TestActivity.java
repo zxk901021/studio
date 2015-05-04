@@ -1,6 +1,7 @@
 package com.example.zhy_9.cardviewtest;
 
 import android.app.Activity;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -8,17 +9,23 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.facebook.drawee.backends.pipeline.Fresco;
+import com.facebook.drawee.view.SimpleDraweeView;
+
 
 public class TestActivity extends Activity {
 
     private Button btn;
+    private SimpleDraweeView view;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test);
-
+        Fresco.initialize(this);
+        view = (SimpleDraweeView) findViewById(R.id.my_draw_view);
+        view.setImageURI(Uri.parse("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRszUBr5MAUvq8gEK1J-9pPnxdLKsMO22hZQjOAdMgzUMKAqNd7"));
         btn = (Button) findViewById(R.id.list_btn);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
