@@ -9,6 +9,16 @@
         android:layout_margin="15dp"
         android:text="@string/google"
         android:textColor="#292add"
-        android:background="#ffffff"/>
+        android:background="#ffffff"
+        android:id="@+id/list_btn"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list"
+        android:layout_below="@+id/list_btn"
+        android:layout_margin="15dp"
+        android:scrollbars="none">
+
+    </ListView>
 
 </RelativeLayout>
