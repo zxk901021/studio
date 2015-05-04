@@ -6,21 +6,20 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ListView;
 import android.widget.Toast;
 
 
 public class TestActivity extends Activity {
 
     private Button btn;
-    private ListView list;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test);
+
         btn = (Button) findViewById(R.id.list_btn);
-        list = (ListView) findViewById(R.id.list);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
